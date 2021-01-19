@@ -1,0 +1,119 @@
+body{
+    zoom: 90%;
+}
+.sidebar{
+    background-image: url('../img/Fondo-Menu-sistema.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 166px;
+    padding-top: 30px;
+    position:fixed;
+    left:0;
+    width:250px;
+    height:100%;
+    transition: 0.3s left;
+}
+
+.sidebar a{
+    color: rgb(214, 30, 159);
+    display:block;
+    width:100%;
+    line-height:60px;
+    text-decoration:none;
+    padding-left:40px;
+    box-sizing:border-box;
+    transition: ease-in-out 0.3s;
+}
+
+.sidebar a:hover{
+    background: rgb(214, 30, 159);
+    color: #fff;
+}
+.pagina_activa{
+    background: rgb(188,224,238);
+}
+.pagina_activa i, .pagina_activa span{
+    color: #fff;
+}
+.pagina_activa span{
+    font-weight: bold;
+}
+.sidebar i{
+    padding-right:10px;
+}
+
+
+label #sidebar_btn{
+    z-index: 1;
+    color: rgb(214, 30, 159);
+    position: fixed;
+    cursor: pointer;
+    left: 200px;
+    top:100px;
+    font-size:30px;
+    margin: 5px 0;
+    transition: color 0.3s;
+}
+
+label #sidebar_btn:hover{
+    color:#fec2fe
+}
+
+#sidebar_check:checked ~ .sidebar{
+    left: -190px;
+}
+
+#sidebar_check:checked ~ .sidebar a span{
+    display: none;
+}
+
+#sidebar_check:checked ~ .sidebar a{
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+}
+
+.content{
+    margin-left:250px;
+    padding-top: 166px;
+    /* background: url('../img/Fondo-Gral.png') no-repeat;
+    background-position:center;
+    background-size:cover;
+    height:100vh; */
+    transition: 0.3s
+}
+
+#sidebar_check:checked ~ .content{
+    margin-left: 60px;
+}
+
+#sidebar_check{
+    display:none;
+}
+.dashboard_back{
+    background: url('../img/Foto-fondo-microscopio.jpg') no-repeat;
+    background-position:center;
+    background-size:cover;
+    height:82.3vh;
+}
+.tabla-registros thead th{
+    font-size: .9em;
+}
+.tabla-registros td{
+    font-size: .8em;
+}
+@media (max-width: 450px) {
+    .sidebar {
+        margin-top: 144px;
+    }
+    label #sidebar_btn:hover{
+        color: rgb(214, 30, 159);
+    }
+    .content{
+        display:none;
+    }
+    #sidebar_check:checked ~ .content{
+        display:flex;
+    }
+}

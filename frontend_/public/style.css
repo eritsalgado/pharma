@@ -1,0 +1,33 @@
+
+
+@font-face {
+    font-family: 'MYRIADPRO';
+    src: url('fonts/MYRIADPRO-REGULAR.OTF');
+    font-family: 'Akzidenz';
+    src: url('fonts/AkzidenzGrotesk-Light.woff');
+    font-family: "Bradley Hand ITC Std"; 
+    src: url("https://db.onlinewebfonts.com/t/8ae68b5c8edb66c23e69ee7b5adb88de.eot"); 
+    src: url("https://db.onlinewebfonts.com/t/8ae68b5c8edb66c23e69ee7b5adb88de.eot?#iefix") format("embedded-opentype"), 
+    url("https://db.onlinewebfonts.com/t/8ae68b5c8edb66c23e69ee7b5adb88de.woff2") format("woff2"), 
+    url("https://db.onlinewebfonts.com/t/8ae68b5c8edb66c23e69ee7b5adb88de.woff") format("woff"), 
+    url("https://db.onlinewebfonts.com/t/8ae68b5c8edb66c23e69ee7b5adb88de.ttf") format("truetype"), 
+    url("https://db.onlinewebfonts.com/t/8ae68b5c8edb66c23e69ee7b5adb88de.svg#Bradley Hand ITC Std") format("svg"); 
+}
+span {
+    font-family: 'MYRIADPRO', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;
+}
+.aki {
+    font-family: 'Akzidenz', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;
+}
+.brad {
+    font-family: 'Bradley Hand ITC Std', 'Cursive'!important;
+    font-weight:bold;
+    font-style:normal;
+}
+.custom-file-input ~ .custom-file-label::after {
+    content: "Buscar muestra";
+}
